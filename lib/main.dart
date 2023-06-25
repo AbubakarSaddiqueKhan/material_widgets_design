@@ -7,14 +7,23 @@ import 'package:flutter_basic_widgets_practice/bottom_navigation_design.dart';
 import 'package:flutter_basic_widgets_practice/checkbox_design.dart';
 import 'package:flutter_basic_widgets_practice/choice_chip_design.dart';
 import 'package:flutter_basic_widgets_practice/divider_design.dart';
+import 'package:flutter_basic_widgets_practice/exposed_drop_down_menu.dart';
 import 'package:flutter_basic_widgets_practice/fliter_chips_design.dart';
 import 'package:flutter_basic_widgets_practice/input_chips_design.dart';
 import 'package:flutter_basic_widgets_practice/custom_dialog.dart';
 import 'package:flutter_basic_widgets_practice/fractional_sized_box.dart';
 import 'package:flutter_basic_widgets_practice/material_buttons_design.dart';
+import 'package:flutter_basic_widgets_practice/material_text_fields.dart';
+import 'package:flutter_basic_widgets_practice/modal_navigation_drawer.dart';
+import 'package:flutter_basic_widgets_practice/popup_menu_design.dart';
+import 'package:flutter_basic_widgets_practice/progress_indicator.dart';
+import 'package:flutter_basic_widgets_practice/radio_button_design.dart';
 import 'package:flutter_basic_widgets_practice/simple_dialog_design.dart';
 import 'package:flutter_basic_widgets_practice/slider_practice.dart';
 import 'package:flutter_basic_widgets_practice/snackbar_design.dart';
+import 'package:flutter_basic_widgets_practice/switch_design.dart';
+import 'package:flutter_basic_widgets_practice/tabs_design.dart';
+import 'package:flutter_basic_widgets_practice/tooltip_design.dart';
 import '../alert_dialog_design.dart';
 
 void main() {
@@ -56,11 +65,16 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          title: Text("Home Page"),
+      appBar: AppBar(
+        title: Text("Material TextFiled Design"),
+        centerTitle: true,
+      ),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [ToolTipDesign()],
         ),
-        body: Center(
-          child: DividerDesign(),
-        ));
+      ),
+    );
   }
 }
